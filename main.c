@@ -4,14 +4,16 @@
 int main(int argc, char *argv[])
 {
     int x;
-    printf("정수 하나를 입력하시오 :");
-    scanf("%i", &x);
+    int i;
+    int sum=0;
     
-    if(x>0)
-    printf("절대값은 %i 입니다.\n",x); 
+    printf("input a number :");
+    scanf("%d", &x);
     
-    else
-    printf("절대값은 %i 입니다.\n",-x);
+    for(i=1;i<=x;i++)
+    sum = sum + i;
+    printf("The result is %i\n",sum); 
+    
     
     system("PAUSE");	
     return 0;
